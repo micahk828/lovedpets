@@ -3,59 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Gallery</title>
+    <title>Loved Pets - Animal Shelter & Rescue</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Dog Gallery</h1>
-        <p>A collection of adorable dogs</p>
+        <nav>
+            <div class="logo-section">
+                <div class="logo-placeholder"><img src="images/logo.png"></div>
+                <div class="brand-name">Loved Pets</div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#quiz">Find Your Pet</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Find Your New Best Friend</h1>
+        <p>Give a loving forever home to an animal in need</p>
+        <a href="#adopt" class="btn">See Adoptable Pets</a>
+    </section>
+
+    <!-- About Section -->
+    <section style="background-color: #f9f9f9;" id="about">
+        <div class="container">
+            <h2>About Loved Pets</h2>
+            <div class="about-grid">
+                <div class="philosophy">
+                    <h3>We Believe Every Animal Deserves a Forever Home</h3>
+                    <p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a loving forever home. We provide initial veterinary care to rescued animals, then work to match each animal with a human family to love them and keep them safe forever. All animals are screened for diseases upon arrival, washed and groomed, and then added to our website for adoptive families to see. All potential adoptive families are also screened for adoption history, household lifestyle, and commitment to providing a safe and loving home.</p>
+                    <p class="testimonial">"Roscoe has brought so much joy to our family. The entire adoption process was seamless, and we felt so confident that we were making the right choice together." — Sarah M., Adopted Family</p>
+                </div>
+
+                <div>
+                    <div class="hours">
+                        <h4>Hours of Operation</h4>
+                        <div class="hour-item">
+                            <span class="hour-day">Monday</span>
+                            <span class="hour-time">8am - 5pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Tuesday</span>
+                            <span class="hour-time">8am - 5pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Wednesday</span>
+                            <span class="hour-time">8am - 8pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Thursday</span>
+                            <span class="hour-time">8am - 5pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Friday</span>
+                            <span class="hour-time">8am - 12pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Saturday</span>
+                            <span class="hour-time">8am - 12pm</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="hour-day">Sunday</span>
+                            <span class="hour-time">Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <main class="gallery">
-        <div class="gallery-item">
-            <img src="images/cocoa.jpg" alt="Cocoa">
-            <h3>Cocoa</h3>
+    <!-- Adoptable Pets Section -->
+    <section id="adopt">
+        <div class="container">
+            <h2>Adoptable Pets</h2>
+            <div class="pets-grid">
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/jack_and_annie.jpg" alt="Jack and Annie"></div>
+                    <div class="pet-info">
+                        <h3>Jack & Annie</h3>
+                        <div class="pet-details">6 weeks • Mix siblings</div>
+                        <div class="pet-bio">Playful and adorable!</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/cocoa.jpg" alt="Cocoa"></div>
+                    <div class="pet-info">
+                        <h3>Cocoa</h3>
+                        <div class="pet-details">20 weeks • Female Chocolate Lab</div>
+                        <div class="pet-bio">Sweet as pie and loves to give kisses!</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/sam.jpg" alt="Sam"></div>
+                    <div class="pet-info">
+                        <h3>Sam</h3>
+                        <div class="pet-details">3 years • Male Orange Mix</div>
+                        <div class="pet-bio">Calm kitty, great with children and other animals (except dogs).</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/rosco.jpg" alt="Roscoe"></div>
+                    <div class="pet-info">
+                        <h3>Roscoe</h3>
+                        <div class="pet-details">8 years • Male Corgi/Chihuahua</div>
+                        <div class="pet-bio">House trained senior ready for his forever home!</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/sheldon.jpg" alt="Sheldon"></div>
+                    <div class="pet-info">
+                        <h3>Sheldon</h3>
+                        <div class="pet-details">1 year • Male Box Turtle</div>
+                        <div class="pet-bio">Loves to sit in the sun and doesn't bite!</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img src="images/jellybean.jpg" alt="Jellybean"></div>
+                    <div class="pet-info">
+                        <h3>Jellybean</h3>
+                        <div class="pet-details">2 years • Female Gray Tabby</div>
+                        <div class="pet-bio">Found in a storm drain but loves people!</div>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <div class="pet-image"><img style="max-width: 100%;height: 100%;" src="images/greyson.jpg" alt="Greyson"></div>
+                    <div class="pet-info">
+                        <h3>Greyson</h3>
+                        <div class="pet-details">10 weeks • Male Gray Mix</div>
+                        <div class="pet-bio">High energy and high cuddles!</div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Start Adoption Process</button>
+            </div>
         </div>
-        
-        <div class="gallery-item">
-            <img src="images/greyson.jpg" alt="Greyson">
-            <h3>Greyson</h3>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>Join Our Team as a Volunteer</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">Help us give more animals the care and love they deserve!</p>
+            
+            <div class="volunteer-steps">
+                <div class="step">
+                    <div class="step-icon">📝</div>
+                    <h3>Step 1</h3>
+                    <p>Complete our online application form.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">✉️</div>
+                    <h3>Step 2</h3>
+                    <p>Submit your application to volunteer@welovepets.com</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">☎️</div>
+                    <h3>Step 3</h3>
+                    <p>Participate in a brief phone interview.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">🎓</div>
+                    <h3>Step 4</h3>
+                    <p>Attend training on the first Saturday of each month.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <button class="btn btn-secondary">Apply to Volunteer</button>
+            </div>
         </div>
-        
-        <div class="gallery-item">
-            <img src="images/jack_and_annie.jpg" alt="Jack and Annie">
-            <h3>Jack and Annie</h3>
+    </section>
+
+    <!-- Pet Match Quiz Section -->
+    <section id="quiz" >
+        <div class="container">
+            <h2>Find Your Perfect Pet Match</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">Answer a few quick questions to discover which adoptable pet might be perfect for your family!</p>
+
+            <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <div id="quizContainer">
+                    <div class="quiz-question">
+                        <h3 style="color: #235067; margin-bottom: 1rem;">Do you have young children (under 10)?</h3>
+                        <button class="quiz-btn" onclick="answer('children', 'yes')">Yes</button>
+                        <button class="quiz-btn" onclick="answer('children', 'no')">No</button>
+                    </div>
+                </div>
+
+                <div id="quizResult" style="display: none; text-align: center;">
+                    <h3 id="resultTitle" style="color: #79c043; margin-bottom: 1rem;"></h3>
+                    <div id="resultContent" style="text-align: left; margin-bottom: 1.5rem;"></div>
+                    <button class="btn btn-secondary" onclick="resetQuiz()">Take Quiz Again</button>
+                    <button class="btn" onclick="document.getElementById('adopt').scrollIntoView({behavior: 'smooth'})" style="margin-left: 0.5rem;">See All Pets</button>
+                </div>
+            </div>
         </div>
-        
-        <div class="gallery-item">
-            <img src="images/jellybean.jpg" alt="Jellybean">
-            <h3>Jellybean</h3>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="images/max.jpg" alt="Max">
-            <h3>Max</h3>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="images/rosco.jpg" alt="Rosco">
-            <h3>Rosco</h3>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="images/sam.jpg" alt="Sam">
-            <h3>Sam</h3>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="images/sheldon.jpg" alt="Sheldon">
-            <h3>Sheldon</h3>
-        </div>
-    </main>
+    </section>
     
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <div class="contact-item">
+                        <strong>📍 Address:</strong>
+                    </div>
+                    <div style="margin-left: 1.5rem; margin-bottom: 1rem;">6645 Watergrass Cir., Springfield, Arizona 11645</div>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <span>(555) 476-2984</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <span>josie@welovepets.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Ready to Help?</h4>
+                    <p style="margin-bottom: 1rem;">Want to adopt or volunteer? Contact us to get started!</p>
+                    <p style="margin-bottom: 1rem;"><strong>Adoption Inquiries:</strong> josie@welovepets.com</p>
+                    <p><strong>Volunteer Applications:</strong> volunteer@welovepets.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Dog Gallery</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <strong>Quick Links</strong>
+                <a href="#adopt">Adoptable Pets</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#about">About Us</a>
+            </div>
+            <div class="footer-section">
+                <strong>Contact</strong>
+                <a href="tel:(555) 476-2984">(555) 476-2984</a>
+                <a href="mailto:josie@welovepets.com">Adoption Info</a>
+                <a href="mailto:volunteer@welovepets.com">Volunteer Info</a>
+            </div>
+            <div class="footer-section">
+                <strong>Organization</strong>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Loved Pets Animal Shelter. All rights reserved. | Dedicated to finding forever homes.</p>
+        </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        // Pet Match Quiz Logic
+        let quizAnswers = {};
+
+        const petDatabase = {
+            'Jack & Annie': {
+                name: 'Jack & Annie',
+                age: '6 weeks',
+                type: 'dogs',
+                breed: 'Mix (Brother & Sister)',
+                image: 'images/jack_and_annie.jpg',
+                bio: 'Playful and adorable siblings!',
+                goodFor: ['active', 'experienced', 'no-concerns'],
+                reason: 'These energetic puppies are perfect for active families who want to raise them together from a young age!'
+            },
+            'Cocoa': {
+                name: 'Cocoa',
+                age: '20 weeks',
+                type: 'dogs',
+                breed: 'Chocolate Labrador',
+                image: 'images/cocoa.jpg',
+                bio: 'Sweet as pie and loves to give kisses!',
+                goodFor: ['children', 'active', 'experienced'],
+                reason: 'Cocoa is gentle and loves people! Labs are known for being great with kids and very trainable.'
+            },
+            'Sam': {
+                name: 'Sam',
+                age: '3 years',
+                type: 'cats',
+                breed: 'Orange Mix',
+                image: 'images/sam.jpg',
+                bio: 'Calm and affectionate kitty.',
+                goodFor: ['children', 'calm', 'no-concerns'],
+                reason: 'Sam is perfect for families! He\'s calm, great with children and other animals. A wonderful companion.'
+            },
+            'Roscoe': {
+                name: 'Roscoe',
+                age: '8 years',
+                type: 'dogs',
+                breed: 'Corgi/Chihuahua Mix',
+                image: 'images/rosco.jpg',
+                bio: 'House trained senior ready for love!',
+                goodFor: ['calm', 'first-time', 'no-concerns'],
+                reason: 'Roscoe is already house trained and calm, making him ideal for first-time dog owners or families wanting a relaxed companion.'
+            },
+            'Sheldon': {
+                name: 'Sheldon',
+                age: '1 year',
+                type: 'other',
+                breed: 'Box Turtle',
+                image: 'images/sheldon.jpg',
+                bio: 'Loves to sit in the sun!',
+                goodFor: ['calm', 'low-maintenance', 'no-concerns'],
+                reason: 'Perfect for anyone wanting a low-maintenance, unique pet that doesn\'t require constant attention or space.'
+            },
+            'Jellybean': {
+                name: 'Jellybean',
+                age: '2 years',
+                type: 'cats',
+                breed: 'Gray Tabby',
+                image: 'images/jellybean.jpg',
+                bio: 'Loves people despite her rough start!',
+                goodFor: ['calm', 'no-concerns', 'patient'],
+                reason: 'Jellybean has overcome a tough beginning and loves people. She\'s perfect for compassionate families wanting to give a rescue cat a loving home.'
+            },
+            'Greyson': {
+                name: 'Greyson',
+                age: '10 weeks',
+                type: 'dogs',
+                breed: 'Gray Mix',
+                image: 'images/greyson.jpg',
+                bio: 'High energy and high cuddles!',
+                goodFor: ['active', 'children', 'experienced'],
+                reason: 'Greyson needs an active family who loves to play and cuddle! He\'d be great for families with older kids who can match his energy.'
+            }
+        };
+
+        function answer(question, response) {
+            quizAnswers[question] = response;
+
+            // Question flow
+            if (question === 'children' && !quizAnswers['hasOtherPets']) {
+                showQuestion('Do you currently have other pets?', 'hasOtherPets', ['yes', 'no']);
+            } else if (question === 'hasOtherPets' && !quizAnswers['activityLevel']) {
+                showQuestion('What\'s your family\'s activity level?', 'activityLevel', ['calm-and-relaxed', 'moderately-active', 'very-active']);
+            } else if (question === 'activityLevel' && !quizAnswers['experience']) {
+                showQuestion('Have you owned a pet before?', 'experience', ['first-time', 'some-experience', 'very-experienced']);
+            } else if (question === 'experience') {
+                displayResult();
+            }
+        }
+
+        function showQuestion(questionText, questionId, options) {
+            const container = document.getElementById('quizContainer');
+            const optionLabels = {
+                'yes': 'Yes',
+                'no': 'No',
+                'calm-and-relaxed': 'Calm & Relaxed',
+                'moderately-active': 'Moderately Active',
+                'very-active': 'Very Active',
+                'first-time': 'First Time',
+                'some-experience': 'Some Experience',
+                'very-experienced': 'Very Experienced'
+            };
+
+            let html = `<div class="quiz-question"><h3 style="color: #235067; margin-bottom: 1rem;">${questionText}</h3>`;
+            options.forEach(opt => {
+                html += `<button class="quiz-btn" onclick="answer('${questionId}', '${opt}')">${optionLabels[opt]}</button>`;
+            });
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        function displayResult() {
+            const resultContainer = document.getElementById('quizResult');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultContent = document.getElementById('resultContent');
+
+            // Matching logic
+            let scores = {};
+            Object.keys(petDatabase).forEach(petName => {
+                scores[petName] = 0;
+            });
+
+            // Score based on answers
+            if (quizAnswers['children'] === 'yes') {
+                ['Cocoa', 'Sam', 'Greyson'].forEach(pet => scores[pet] += 3);
+                ['Sheldon', 'Jellybean'].forEach(pet => scores[pet] += 1);
+            } else {
+                Object.keys(scores).forEach(pet => scores[pet] += 1);
+            }
+
+            if (quizAnswers['hasOtherPets'] === 'no') {
+                Object.keys(scores).forEach(pet => scores[pet] += 1);
+            }
+
+            if (quizAnswers['activityLevel'] === 'very-active') {
+                ['Jack & Annie', 'Cocoa', 'Greyson'].forEach(pet => scores[pet] += 3);
+            } else if (quizAnswers['activityLevel'] === 'moderately-active') {
+                ['Cocoa', 'Sam', 'Roscoe'].forEach(pet => scores[pet] += 2);
+            } else if (quizAnswers['activityLevel'] === 'calm-and-relaxed') {
+                ['Roscoe', 'Sheldon', 'Sam', 'Jellybean'].forEach(pet => scores[pet] += 3);
+            }
+
+            if (quizAnswers['experience'] === 'first-time') {
+                ['Roscoe', 'Sam', 'Cocoa'].forEach(pet => scores[pet] += 2);
+            } else if (quizAnswers['experience'] === 'some-experience') {
+                Object.keys(scores).forEach(pet => scores[pet] += 1);
+            } else if (quizAnswers['experience'] === 'very-experienced') {
+                ['Jack & Annie', 'Greyson'].forEach(pet => scores[pet] += 2);
+            }
+
+            // Find best match
+            let bestMatch = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+            let pet = petDatabase[bestMatch];
+
+            resultTitle.textContent = `We think ${pet.name} might be perfect for you!`;
+            resultContent.innerHTML = `
+                <img src="${pet.image}" alt="${pet.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+                <p><strong>${pet.name}</strong> - ${pet.age} • ${pet.breed}</p>
+                <p style="margin: 1rem 0; color: #666; font-style: italic;">"${pet.bio}"</p>
+                <p style="color: #424242; line-height: 1.8;">${pet.reason}</p>
+                <p style="margin-top: 1rem; color: #79c043; font-weight: 600;">Curious about ${pet.name}? Click the button to see all our adoptable pets or contact us for more information!</p>
+            `;
+
+            document.getElementById('quizContainer').style.display = 'none';
+            resultContainer.style.display = 'block';
+        }
+
+        function resetQuiz() {
+            quizAnswers = {};
+            document.getElementById('quizContainer').style.display = 'block';
+            document.getElementById('quizResult').style.display = 'none';
+            showQuestion('Do you have young children (under 10)?', 'children', ['yes', 'no']);
+        }
+    </script>
 </body>
 </html>
