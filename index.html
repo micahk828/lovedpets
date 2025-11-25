@@ -28,6 +28,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-slideshow" id="heroSlideshow"></div>
         <h1>Find Your New Best Friend</h1>
         <p>Give a loving forever home to an animal in need</p>
         <a href="#adopt" class="btn">See Adoptable Pets</a>
@@ -276,6 +277,65 @@
     </footer>
 
     <script>
+        // Hero Slideshow Setup
+        const heroMedia = [
+            { type: 'image', src: 'slideshow/owl_girl.jpg' },
+            { type: 'video', src: 'slideshow/cats.mp4' },
+            { type: 'image', src: 'slideshow/dog_high_five.jpg' },
+            { type: 'video', src: 'slideshow/dog_volunteer.mp4' },
+            { type: 'image', src: 'slideshow/cat_tabby_2.jpg' },
+            { type: 'image', src: 'slideshow/dog_book.jpg' },
+            { type: 'image', src: 'slideshow/cats.jpg' },
+            { type: 'image', src: 'slideshow/dog_patting.jpg' },
+            { type: 'video', src: 'slideshow/dog_play.mp4' },
+            { type: 'image', src: 'slideshow/vet_dog_ear.jpg' },
+            { type: 'image', src: 'slideshow/cats_two.jpg' },
+            { type: 'image', src: 'slideshow/dog_child.jpg' }
+        ];
+
+        let currentSlide = 0;
+
+        function initializeSlideshow() {
+            const slideshowContainer = document.getElementById('heroSlideshow');
+
+            heroMedia.forEach((media, index) => {
+                const slide = document.createElement('div');
+                slide.className = 'hero-slide';
+                if (index === 0) slide.classList.add('active');
+
+                if (media.type === 'image') {
+                    const img = document.createElement('img');
+                    img.src = media.src;
+                    img.alt = 'Loved Pets';
+                    slide.appendChild(img);
+                } else if (media.type === 'video') {
+                    const video = document.createElement('video');
+                    video.src = media.src;
+                    video.autoplay = false;
+                    video.muted = true;
+                    video.loop = true;
+                    slide.appendChild(video);
+                }
+
+                slideshowContainer.appendChild(slide);
+            });
+
+            startSlideshow();
+        }
+
+        function startSlideshow() {
+            setInterval(() => {
+                const slides = document.querySelectorAll('.hero-slide');
+                slides[currentSlide].classList.remove('active');
+
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 4000); // Change slide every 4 seconds
+        }
+
+        // Initialize slideshow when page loads
+        window.addEventListener('DOMContentLoaded', initializeSlideshow);
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
