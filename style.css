@@ -461,8 +461,6 @@ footer {
     border-color: #79c043;
 }
 
-
-/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         gap: 1rem;
